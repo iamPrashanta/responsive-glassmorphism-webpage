@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.container {
+  height: 100vh;
+  background: url("./neon-wallpaper-20070214104539.jpg") center/cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-animation: hue 10s infinite alternate;
+          animation: hue 10s infinite alternate;
+}
+
+.container::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-filter: blur(1.6rem);
+          filter: blur(1.6rem);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.container a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container .main-header {
+  height: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .sub-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container .sub-container .logo {
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container .sub-container .btn {
+  padding: 1rem 2.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2.5rem;
+  color: #fff;
+}
+
+.container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100vh - 12rem);
+}
+
+.container .content .wrapper {
+  max-width: 40rem;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+}
+
+.container .content .tagline {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.container .content .title {
+  font-size: 3.3rem;
+  margin-bottom: 2rem;
+}
+
+.container .content .message {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.container .content .learn-btn {
+  background-color: #000;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content .wrapper {
+    max-width: 60rem;
+  }
+  .content .wrapper .tagline {
+    font-size: 1.8rem;
+  }
+  .content .wrapper .title {
+    font-size: 6rem;
+  }
+  .content .wrapper .message {
+    font-size: 2rem;
+  }
+  .sub-container .btn {
+    padding: 1.5rem 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
