@@ -17,7 +17,7 @@ body {
 
 .container {
   height: 100vh;
-  background: url("./neon-wallpaper-20070214104539.jpg") center/cover;
+  background: url("./img/neon-wallpaper-20070214104539.jpg") center/cover;
   position: relative;
   z-index: 1;
   overflow: hidden;
